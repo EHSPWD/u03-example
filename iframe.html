@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Iframes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        iframe {
+            border: 3px solid #333;
+            width: 600px;
+            height: 350px;
+            margin-bottom: 20px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the &lt;iframe&gt; Tag</h1>
+    <p>
+        The <code>&lt;iframe&gt;</code> tag is used to embed another webpage, video, map, or external content inside your webpage.
+        It stands for <strong>inline frame</strong>.
+    </p>
+
+    <hr>
+
+    <h2>Example 1: Embedding a Website</h2>
+    <p>This example shows how to embed a webpage inside another webpage:</p>
+
+    <pre><code>&lt;iframe src="https://www.example.com" title="Example Website"&gt;&lt;/iframe&gt;</code></pre>
+
+    <iframe src="https://www.example.com" title="Example Website"></iframe>
+
+    <hr>
+
+    <h2>Example 2: Embedding a YouTube Video</h2>
+    <p>YouTube provides a special embed URL using iframes:</p>
+
+    <pre><code>&lt;iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    title="YouTube Video"
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+
+    <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube Video"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+
+    <h2>Useful Attributes</h2>
+    <ul>
+        <li><strong>src:</strong> the link to the page or content you want to display</li>
+        <li><strong>width / height:</strong> control the iframe size</li>
+        <li><strong>title:</strong> adds accessibility information</li>
+        <li><strong>allowfullscreen:</strong> allows full screen mode for videos</li>
+        <li><strong>loading="lazy":</strong> delays loading until the frame is visible</li>
+    </ul>
+</body>
+</html>
